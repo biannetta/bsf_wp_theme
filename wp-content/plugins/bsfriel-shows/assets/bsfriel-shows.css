@@ -1,0 +1,16 @@
+.bsfriel_shows_entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.bsfriel_shows_entry label,
+.bsfriel_shows_entry input {
+  flex-grow: 1;
+}
+
+.bsfriel_shows_entry--detail {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 5px 0px;
+}

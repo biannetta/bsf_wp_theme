@@ -25,6 +25,18 @@
 	<header id="masthead" class="header">
 		<div class="hero">
 			<div class="hero__headline"><?php bloginfo( 'name' ); ?></div>
+			<div class="social">
+			<?php
+				$socialicons = get_theme_mod( 'bsf_socialicons_setting' );
+				if ($socialicons) {
+					foreach ( $socialicons as $icon => $link ) {
+						if ($link <> '') {
+							echo '<a class="social__link" href="'.$link.'"><i class="fab fa-'.$icon.'"></i></a>';
+						}
+					}
+				}
+			?>
+			</div>
 			<?php
 				wp_nav_menu( array(
 					'theme_location'	=> 'menu-1',

@@ -20,6 +20,13 @@
 		} );
 	} );
 
+	// Social Links
+	wp.customize( 'bsf_theme_section', function( value ) {
+		value.bind( function( to ) {
+			$( '.social').text( to );
+		})
+	})
+
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {

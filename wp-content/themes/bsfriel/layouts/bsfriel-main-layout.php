@@ -8,6 +8,6 @@ function bsfriel_main_layout_hook() {
   get_template_part( 'section-parts/section', 'feature' );
 
 }
-add_action( 'home_page_section', 'bsfriel_main_layout_hook', 10 );
+add_action( 'home_page_section', 'bsfriel_main_layout_hook' );
 
 ?>

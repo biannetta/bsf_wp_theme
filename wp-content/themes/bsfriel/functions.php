@@ -124,6 +124,8 @@ function bsfriel_scripts() {
 
 	wp_enqueue_style( 'bsfriel-style-layout', get_template_directory_uri() . '/layouts/bsfriel_theme.css' );
 
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.min.css' );
+
 	wp_enqueue_script( 'bsfriel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bsfriel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -163,12 +165,3 @@ require get_template_directory() . '/layouts/bsfriel-main-layout.php';
  * Custom Navigational Walker for 
  */
 require get_template_directory() . '/inc/bsfriel-navwalker.php';
-
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
-

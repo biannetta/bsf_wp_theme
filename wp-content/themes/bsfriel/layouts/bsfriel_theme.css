@@ -55,6 +55,7 @@ body {
   align-self: center;
   text-align: center;
 }
+
 .navbar {
   border-radius: 0px;
   display: flex;
@@ -245,6 +246,12 @@ body {
   opacity: 0.9;
 }
 
+/* Override WP Style */
+.menu-main-menu-container {
+  width: 0;
+}
+
+/* Media Styles */
 @media screen and (max-width: 800px) {
   .hero__headline { 
     font-size: 30px;
